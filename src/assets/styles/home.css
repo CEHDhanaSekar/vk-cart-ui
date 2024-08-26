@@ -1,0 +1,73 @@
+/* Home page */
+.home-hero{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.75)),url(../cart-home.png);
+    background-position-x: right;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .hero-top{
+    min-height: 90vh;
+  }
+  .flex-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-img{
+    max-width: 500px;
+    width: 100%;
+    opacity: 0;
+    scale: .25;
+  }
+  .home-img-alt{
+    max-width: 300px;
+    width: 100%;
+  }
+  .text-part,.text-part-alt{
+    transform: translateY(25px);
+    opacity: 0;;
+  }
+  .text-part-alt h3{
+    background-color: #ffffff20;
+    padding: 1.5rem;
+    backdrop-filter: blur(5px);
+    border-radius: 5rem 0rem 5rem 0rem;
+  }
+  .text-part h3{
+    color: #4e5d74;
+  }
+  .img-part-alt{
+    scale: .25;
+    transform: translateX(-550px);
+    position: relative;
+  }
+  .model{
+    min-height: 100vh;
+  }
+  .model .model-img img{
+    max-width: 350px;
+    width: 90%;
+    scale: 0;
+    opacity: 0;
+  }
+  #cart-icon{
+    transform: translateX(50px);
+  }
+  .model .model-text p {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  @media screen and (max-width : 556px) {
+    .home-hero{
+      background: linear-gradient(rgba(0, 0, 0, 0.74),rgba(0, 0, 0, 0.674)),url(../cart-home-phone.png);
+      background-position-x: right;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  }
+  /* -------------------------- */

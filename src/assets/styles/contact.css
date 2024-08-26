@@ -1,0 +1,38 @@
+.contact-container{
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.flex-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-location iframe,:is(.building-img,.assistant-img) img{
+    max-width: 350px;
+    width: 90%;
+    min-height: 400px;
+}
+
+.map-location iframe{
+    transform: translateX(200px);
+    opacity: 0;
+}
+
+.building-img img{
+    transform: translateX(-200px);
+    opacity: 0;
+}
+
+.assistant-img img{
+    transform: translateX(-300px);
+    scale: .5;
+    opacity: 0;
+}
+
+.assistant-text address{
+    transform: translateY(-100px);
+    opacity: 0;
+}
